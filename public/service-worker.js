@@ -3,12 +3,12 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open('my-cache').then(cache => {
             return cache.addAll([
-                '',
-                'index.html',
-                'script.js',
-                'manifest.json',
-                'icon-192x192.png',
-                'icon-512x512.png'
+                '/',
+                '/index.html',
+                '/script.js',
+                '/manifest.json',
+                '/icon-192x192.png',
+                '/icon-512x512.png'
             ]);
         })
     );
